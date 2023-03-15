@@ -11,7 +11,7 @@ jobs:
       - name: Test app
         run: npm run test
   lint:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       - name: Lint app
         run: npm run lint
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
